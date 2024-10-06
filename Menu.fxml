@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="722.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WP.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f3c48" height="400.0" stroke="BLACK" strokeType="INSIDE" width="265.0" />
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Text fill="#910591" layoutX="27.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add to the Menu">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Text>
+            <Button fx:id="exit" layoutX="532.0" layoutY="-5.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="53.0" text="Exit" />
+            <RadioButton fx:id="rd1" layoutX="91.0" layoutY="84.0" mnemonicParsing="false" onAction="#Drink" text="Drink" textFill="WHITE" />
+            <RadioButton fx:id="rd2" layoutX="27.0" layoutY="84.0" mnemonicParsing="false" onAction="#Meal" text="Meal" textFill="WHITE" />
+            <RadioButton fx:id="rd3" layoutX="152.0" layoutY="84.0" mnemonicParsing="false" onAction="#Desert" text="Dessert" textFill="WHITE" />
+            <TextField fx:id="MenutxtName" layoutX="3.0" layoutY="129.0" prefHeight="25.0" prefWidth="242.0" />
+            <Text fx:id="MenuName" fill="#fafafa" layoutX="6.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <TextField fx:id="MenutxtPrice" layoutX="2.0" layoutY="187.0" prefHeight="25.0" prefWidth="242.0" />
+            <Text fx:id="MenuPrice" fill="WHITE" layoutX="6.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Button layoutX="1.0" layoutY="225.0" mnemonicParsing="false" onAction="#MenuAdd" text="Add" />
+            <ListView fx:id="menuListView" layoutX="277.0" layoutY="25.0" prefHeight="350.0" prefWidth="281.0" />
+            <Button layoutX="45.0" layoutY="225.0" mnemonicParsing="false" onAction="#Menubtndelete" text="Remove" />
+            <Button layoutX="113.0" layoutY="225.0" mnemonicParsing="false" onAction="#Menubtnupdate" text="Update" />
+            <Text fx:id="MenuInfo" fill="RED" layoutX="3.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
